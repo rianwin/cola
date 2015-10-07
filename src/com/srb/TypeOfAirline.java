@@ -1,5 +1,6 @@
 package com.srb;
 
+// Hello
 public class TypeOfAirline {
 
 	public static String COMMERCIAL = "COMMERCIAL";
