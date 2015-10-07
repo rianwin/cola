@@ -48,7 +48,7 @@ public class AirplaneImpl extends AirplaneFeatures implements AirplaneInterface{
 
 	@Override
 	public void setSeatingCapacity(Integer seatingCapacity) {
-		this.seatingCapacity = this.seatingCapacity;
+		this.seatingCapacity = seatingCapacity;
 		
 	}
 
