@@ -7,52 +7,88 @@ package com.srb;
  * @author srbwin
  *
  */
-public class AirplaneImpl implements AirplaneInterface{
+public class AirplaneImpl extends AirplaneFeatures implements AirplaneInterface{
 	
-	TypeOfAirline typeOfAirline;
+	int seatingCapacity;
+	String brand;
+	Float maxFlyingDistance;
+	int noOfWings;
+	private Integer noOfPropellers;
 
 	/**
 	 * @param args
 	 */
 	public static void main(String[] args) {
+		TypeOfAirline typeOfAirline = new TypeOfAirline();
+		String typeOfAirlineStr = typeOfAirline.typeOfAirline('c');
+		System.out.println(typeOfAirlineStr);
+	
+		AirplaneImpl airplaneImpl = new AirplaneImpl();
+		airplaneImpl.setbrand("Boeing");
+		airplaneImpl.setSeatingCapacity(100);
+		airplaneImpl.setMaxFlyingDistance(2000f);
+		airplaneImpl.setNoOfPropellers(4);
 		
-	}
-
-	@Override
-	public void setAirplaneFeatures(AirplaneFeatures airlAirplaneFeatures) {
-		// TODO Auto-generated method stub
+		System.out.println(airplaneImpl.getBrand());
+		System.out.println(airplaneImpl.getSeatingCapacity());
+		System.out.println(airplaneImpl.getMaxFlyingDistance());
+		System.out.println(airplaneImpl.getNoOfPropellers());
 		
-	}
-
-	@Override
-	public AirplaneFeatures getAirplaneFeatures() {
-		// TODO Auto-generated method stub
-		return null;
-	}
-
-	@Override
-	public void setTypeOfAirline(TypeOfAirline typeOfAirline) {
-		// TODO Auto-generated method stub
-		
-	}
-
-	@Override
-	public TypeOfAirline getTypeOfAirline() {
-		// TODO Auto-generated method stub
-		return null;
 	}
 
 	@Override
 	public void setbrand(String brand) {
-		// TODO Auto-generated method stub
-		
+		this.brand = brand;
 	}
 
 	@Override
 	public String getBrand() {
-		// TODO Auto-generated method stub
-		return null;
+		return brand;
 	}
 
+	@Override
+	public void setSeatingCapacity(Integer seatingCapacity) {
+		this.seatingCapacity = this.seatingCapacity;
+		
+	}
 
+	@Override
+	public Integer getSeatingCapacity() {
+		return seatingCapacity;
+	}
+
+	@Override
+	public void setMaxFlyingDistance(Float maxFlyingDistance) {
+		this.maxFlyingDistance = maxFlyingDistance;
+		
+	}
+
+	@Override
+	public Float getMaxFlyingDistance() {
+		return maxFlyingDistance;
+	}
+
+	@Override
+	public void setNoOfPropellers(Integer noOfPropellers) {
+		this.noOfPropellers = noOfPropellers;
+		
+	}
+
+	@Override
+	public Integer getNoOfPropellers() {
+		// TODO Auto-generated method stub
+		return noOfPropellers;
+	}
+
+	@Override
+	public void setNoOfWings(Integer noOfWings) {
+		this.noOfWings = this.noOfWings;
+	}
+
+	@Override
+	public Integer getNoOfWings() {
+		return noOfWings;
+	}
+
+	
 }

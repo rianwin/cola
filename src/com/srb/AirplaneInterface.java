@@ -10,11 +10,17 @@ package com.srb;
 public interface AirplaneInterface {
 	String NAME = "SAURABH";
 	
-	void setAirplaneFeatures(AirplaneFeatures airlAirplaneFeatures);
-	AirplaneFeatures getAirplaneFeatures();
+	void setSeatingCapacity(Integer seatingCapacity);
+	Integer getSeatingCapacity();
 	
-	void setTypeOfAirline(TypeOfAirline typeOfAirline);
-	TypeOfAirline getTypeOfAirline();
+	void setMaxFlyingDistance(Float maxFlyingDistance);
+	Float getMaxFlyingDistance();
+	
+	void setNoOfPropellers(Integer noOfPropellers);
+	Integer getNoOfPropellers();
+	
+	void setNoOfWings(Integer noOfWings);
+	Integer getNoOfWings();
 	
 	void setbrand(String brand);
 	String getBrand();
