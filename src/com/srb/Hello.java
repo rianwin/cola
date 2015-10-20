@@ -18,6 +18,7 @@ public class Hello {
 
 	public void setFlighttype(int flighttype) {
 		this.flighttype = flighttype;
+		System.out.println();;
 	}
 
 	/**
@@ -28,6 +29,7 @@ public class Hello {
 		Hello a = new Hello();
 		a.setFlighttype(1234);
 		System.out.println(a.getFlighttype());
+		
 	}
 	
 	private static String printHelloWorld() {
